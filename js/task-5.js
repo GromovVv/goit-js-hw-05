@@ -1,7 +1,7 @@
 
 class Car {
 
-    constructor({speed, price, maxSpeed, isOn, distance}) {
+    constructor({speed = 0, price, maxSpeed, isOn = false, distance = 0}) {
       this._speed = speed;
       this._price = price;
       this._maxSpeed = maxSpeed;
@@ -44,10 +44,9 @@ class Car {
   }
 
     drive = function(hours) {
-      if (this._isOn === true){
-        this._distance = hours * this._speed;
+      if (this._isOn){
+        this._distance += hours * this._speed;
       }
-      return this._distance;
     }
 }
 

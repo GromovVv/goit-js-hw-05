@@ -13,19 +13,16 @@ class Storage {
       return this.items;
   }
 
-  // - получает новый товар и добавляет его к текущим
   addItem = function(item){
     this.items.push(item);
   }
 
-  // // - получет товар и, если он есть, удаляет его из текущих
   removeItem = function(item){
     for (let i = 0; i < this.items.length; i = item) {
      delete this.items[i];
     }
   }
 }
-  
 
 const storage = new Storage([
   'Нанитоиды',

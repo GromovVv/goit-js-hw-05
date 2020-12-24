@@ -1,7 +1,3 @@
-// Напиши класс Storage, который будет создавать объекты для 
-// управления складом товаров. При вызове будет получать 
-// один аргумент - начальный массив товаров, и записывать 
-// его в свойство items.
 
 class Storage {
 
@@ -32,10 +28,8 @@ const storage = new Storage([
 ]);
 
 const items = storage.getItems();
-console.table(items); // [ "Нанитоиды", "Пролонгер", "Железные жупи", "Антигравитатор" ]
-
+console.table(items); 
 storage.addItem('Дроид');
-console.table(storage.items); // [ "Нанитоиды", "Пролонгер", "Железные жупи", "Антигравитатор", "Дроид" ]
-
+console.table(storage.items); 
 storage.removeItem('Пролонгер');
-console.table(storage.items); // [ "Нанитоиды", "Железные жупи", "Антигравитатор", "Дроид" ]
+console.table(storage.items); 

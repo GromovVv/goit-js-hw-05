@@ -16,7 +16,7 @@ const mango = new User({
   followers: 20,
 });
 
-mango.getInfo(); // User Mango is 2 years old and has 20 followers
+mango.getInfo(); 
 
 const poly = new User({
   name: 'Poly',
@@ -24,4 +24,4 @@ const poly = new User({
   followers: 17,
 });
 
-poly.getInfo(); // User Poly is 3 years old and has 17 followers
+poly.getInfo(); 

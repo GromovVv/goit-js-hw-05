@@ -1,7 +1,7 @@
 
 class Storage {
 
-   constructor(items) {
+  constructor(items) {
       this.items = items;
   }
 
@@ -13,9 +13,14 @@ class Storage {
     this.items.push(item);
   }
 
-  removeItem(item){
-    for (let i = 0; i < this.items.length; i = item) {
-     delete this.items[i];
+  removeItem(item) {
+    // if (!this.items.includes(item)) {
+    //   console.log('Такого элемента нет в нашем массиве');
+    // }
+    for (let i = 0; i < this.items.length; i += 1){
+      if (this.items[i] === item) {
+        this.items.splice(i, 1);
+      }
     }
   }
 }
@@ -33,3 +38,5 @@ storage.addItem('Дроид');
 console.table(storage.items); 
 storage.removeItem('Пролонгер');
 console.table(storage.items); 
+
+

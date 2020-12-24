@@ -24,6 +24,11 @@ class Car {
     this.isOn = true;
   }
 
+  turnOff() {
+    this.isOn = false;
+    this.speed = 0;
+  }
+  
   accelerate(value) {
     if (this.speed + value < this._maxSpeed) {
       this.speed += value
@@ -46,10 +51,7 @@ class Car {
     }
   }
 
-  turnOff() {
-    this.isOn = false;
-    this.speed = 0;
-  }
+
 }
 
 const mustang = new Car({ maxSpeed: 200, price: 2000 });

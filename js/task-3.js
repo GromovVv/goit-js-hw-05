@@ -14,9 +14,7 @@ class Storage {
   }
 
   removeItem(item) {
-    // if (!this.items.includes(item)) {
-    //   console.log('Такого элемента нет в нашем массиве');
-    // }
+   
     for (let i = 0; i < this.items.length; i += 1){
       if (this.items[i] === item) {
         this.items.splice(i, 1);

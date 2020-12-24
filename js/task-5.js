@@ -56,18 +56,18 @@ class Car {
 
 const mustang = new Car({ maxSpeed: 200, price: 2000 });
 
-Car.getSpecs(mustang);
-
 mustang.turnOn();
 mustang.accelerate(50);
 mustang.drive(2);
+
 Car.getSpecs(mustang);
 
 mustang.decelerate(20);
 mustang.drive(1);
 mustang.turnOff();
+
 Car.getSpecs(mustang);
 
-console.log(mustang.price); // 2000
+console.log(mustang.price); 
 mustang.price = 4000;
-console.log(mustang.price); // 4000
+console.log(mustang.price);

@@ -7,15 +7,15 @@ class StringBuilder {
         return this._value;
     }
 
-    append = function(str) {
+    append(str) {
        this._value = this.value + str;
     }
 
-    prepend = function(str){
+    prepend(str){
         this._value = str + this.value;
     }
 
-    pad = function(str) {
+    pad(str) {
         this._value = str + this.value + str;
     }
 }

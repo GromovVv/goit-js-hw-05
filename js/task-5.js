@@ -9,7 +9,7 @@ class Car {
       this._distance = distance;
     }
     
-    static getSpecs = function(car){
+    static getSpecs(car){
      console.log(`maxSpeed: ${car._maxSpeed}, speed: ${car._speed}, isOn: ${car._isOn}, distance: ${car._distance}, price: ${car._price}`);
     }
 
@@ -21,29 +21,29 @@ class Car {
         this._price = value;
     }
 
-    turnOn = function() {
+    turnOn() {
     this._isOn = true;
     }
 
-    turnOff = function() {
+    turnOff() {
     this._isOn = false;
     this._speed = 0;
     }
 
-  accelerate = function(value) {
+  accelerate(value) {
     if (value <= this._maxSpeed){
     }
     return this._speed = value;
   }
 
-  decelerate = function(value) {
+  decelerate(value) {
     if (value > 0) {
       this._speed -= value;
     }
     return this._speed;
   }
 
-    drive = function(hours) {
+    drive(hours) {
       if (this._isOn){
         this._distance += hours * this._speed;
       }

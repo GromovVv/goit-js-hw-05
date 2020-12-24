@@ -5,15 +5,15 @@ class Storage {
       this.items = items;
   }
 
-  getItems = function() {
+  getItems() {
       return this.items;
   }
 
-  addItem = function(item){
+  addItem(item){
     this.items.push(item);
   }
 
-  removeItem = function(item){
+  removeItem(item){
     for (let i = 0; i < this.items.length; i = item) {
      delete this.items[i];
     }
